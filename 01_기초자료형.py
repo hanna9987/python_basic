@@ -9,6 +9,7 @@ print(a)
 b = input('숫자를 입력하세요 >> ')
 print(b)
 print(type(a))
+
 # 파일이 .gitignore에 안들어갔을때
 # git rm -r --cached.
 # git add .
