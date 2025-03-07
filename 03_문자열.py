@@ -49,7 +49,7 @@ print(txt01.format(5, text03))
 
 txt02 = "I eat {:0.2f} apples {}"
 print(txt01.format(3000000, text03))
-txt02 = "I eat {:,.2f} apples {}"
+txt02 = "I eat {:,2f} apples {}"
 print(txt01.format(3000000, text03))
 
 name = "홍길동"
