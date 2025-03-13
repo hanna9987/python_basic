@@ -90,3 +90,16 @@ print(s2)
 s1 = set(1,2,3,3,2)
 print(s1)
 
+
+name_card = {'name':'홍길동',
+             'tel':'010-888-9999',
+             'address':'부산',
+             'email':'han@mail.net'}
+
+for k in name_card.items():
+    print(k)
+print('-'*30)
+
+for k,v in name_card.items():
+    print(k,v) #튜플 없이 되네? 왜지?
+
