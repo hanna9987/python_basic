@@ -1,5 +1,7 @@
 # 파일명이 숫자로 시작하면 함수가 잘 작동이 안되서 영문명으로 따로 분리
 # shift tab : 전체 내어쓰기
+import json
+
 def card_input(card_list):
     name = input('이름 >>> ')
     tel = input('전화번호 >>> ')
@@ -53,3 +55,11 @@ def card_list(card_list):
       print(f'{card[0]:10} {card[1]:15} {card[2]:10} {card[3]:10}')
     print('=' * 55)
     return card_list
+
+def card_save(card_list,filename):
+  with open(filename,'w') as f:
+    json.dump(card_list,f,indent=2,ensure_ascii=False) #f 는 as f 파일 개체로 너어야함함
+
+def card_load(filename):
+  with open(filename) as f:
+    return json.load(f)
